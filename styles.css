@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+@font-face {
+    font-family: 'Ride the Fader';
+    src: url('fonts/RideTheFader-1XKg.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:darkslategrey;
+    font-family: 'Lato', sans-serif;
+}
+header{
+    background-color: crimson;
+    padding: 20px;
+}
+
+header > h1 {
+    color: #25272E;
+    text-align: center;
+
+}
+
+.score-board{
+    font-family: 'Ride the Fader';
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    width: fit-content;
+    margin: 20px auto;
+    background-color: black;
+    color: yellow;
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.badge{
+    font-size: 22px;
+}
+
+#user-score, #computer-score {
+    animation: blink 1.5s linear infinite;
+}
+
+.result > p{
+    min-height: 7rem;
+    font-size: 40px;
+    color:white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.reset {
+    display: block;
+    margin: 0 auto;
+    font-size: 22px;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.choice_button{
+    border-radius: 50%;
+    margin: 20px;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.choice{
+    filter:brightness(50%);
+}
+
+.choice:hover{
+    filter: brightness(100%);
+    font-weight: bold;
+}
+
+.choice_label {
+    text-align: center;
+    color: black;
+    font-size: 22px;
+}
+
+#action-message{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 20px;
+    animation: blink 2.5s linear infinite;
+}
+
+button {
+    filter:brightness(50%);
+    cursor: pointer;
+    border: 5px solid white;
+    background-color: transparent;
+}
+
+button:hover {
+    filter: brightness(100%);
+    font-weight: bold;
+}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    25%{opacity: .5;}
+    50%{opacity: 1;}
+    75%{opacity: .5;}
+    100%{opacity: 0;}
+}

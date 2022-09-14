@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="HU">
+<head>
+    <meta charset="utf-8">
+    <title>Kő Papír Olló</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/scissors.png">
+</head>
+<body>
+    <header>
+        <h1>Kő Papír Olló</h1>
+    </header>
+        
+    <div class="score-board">
+        <div>
+            <div id="user-score"></div>
+            <div class="badge">Te</div>
+        </div>
+        <div>
+            <div>-</div>
+        </div>
+        <div>
+            <div id="computer-score"></div>
+            <div class="badge">PC</div>
+        </div>
+    </div>
+
+    <div class="result">
+        <p id="show_p" ></p>
+        <p id="result_p" ></p>
+    </div>
+
+    <button class="reset" onclick="resetScore()">Eredmény nullázása</button>
+    
+    <div class="choices">
+        <div class="choice" >
+            <button class="choice_button">
+                <img src="images/rock.png" id="rock" alt="rock" height="100">
+            </button>
+            <div class="choice_label">Kő</div>
+        </div>
+        <div class="choice">
+            <button class="choice_button">
+                <img src="images/paper.png" id="paper" alt="paper" width="100">
+            </button>
+            <div class="choice_label">Papír</div>
+        </div>
+        <div class="choice">
+            <button class="choice_button">
+                <img src="images/scissors.png" id="scissors" alt="scissors" height="100">
+            </button>
+            <div class="choice_label">Olló</div>
+        </div>
+    </div>
+    
+    <p id="action-message">Lépj!</p>
+
+    <script src="scripts/game.js" charset="utf-8"></script>
+</body>
+</html>
